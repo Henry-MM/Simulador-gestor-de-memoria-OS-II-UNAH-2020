@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: sans-serif;
+    --container-background: #424651;
+    --sidebar-background: #f4f4ed;
+    --container-memory-background: #f4f4ed;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--container-background);
+}
+
+.container .sidebar{
+    width: 24%;
+    height: 100%;
+    margin-right: 20px;
+    padding: 0 2% 2% 2%;
+
+    border-radius: 14px;
+    background-color: var(--sidebar-background);
+}
+
+.container .container-memory{
+    width: 75%;
+    background-color: black;
+    height: 100%;
+
+    border-radius: 14px;
+    background-color: var(--container-memory-background);
+}
+
+div > .container-title{
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+
+.container-memory-aux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 89%;
+}
+
+.memory{
+    width: 25%;
+    height: 90%;
+    margin: 0 15px;
+    border: 2px #424651 solid;
+    position: relative;
+}
+
+.memory > .partition{
+    width: 100%;
+    height: 12.5%;
+    border: 1px solid #648de5;
+    background-color: white;
+    position: relative;
+}
+
+h6,i{
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    color: #424651;
+}
+
+i{
+    right: 5px;
+    bottom: 2px;
+    color: #a20021;
+}
+
+i:hover{
+    cursor: pointer;
+    color: #f52f57;
+}
+
+.partition .active{
+    background-color: #c9c9c9;
+    width: 100%;
+}
+
+.memory-partners-container{
+    width: 40%;
+    height: 90%;
+    border: 1px solid #648de5;
+    background-color: white;
+}
+
+.memory-partners{
+    width: 90%;
+    height: 10%;
+    border: 1px solid black;
+    margin: 20px auto;
+    display: flex;
+    position: relative;
+}
+
+.partners-partition{
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory management simulator</title>
+    <link rel="stylesheet" href="./dynamic.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/ef3dcc44be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 class="container-title">Settings</h2>
+            
+            <label for="load-process">Carga Proceso</label>
+            <input type="number" name="load-process" id="load-process">
+            <span>MB</span>
+            <button type="button" class="load-btn">Cargar</button>
+
+            <select name="ubication-type" id="ubication-type" class="ubication-type">
+                <option value="0">first-fit</option>
+                <option value="1">best-fit</option>
+                <option value="2">next-fit</option>
+            </select>
+
+            <!-- <label for="memory-size">Cambiar tamaño memoria </label>
+            <input type="number" name="memory-size" id="memory-size">
+            <button type="button" class="memory-size-btn">Establecer</button> -->
+
+        </div>
+    
+        <div class="container-memory">
+            <h2 class="container-title">Memory management</h2>
+            
+            <div class="container-memory-aux">
+                <div class="memory">
+                    
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>
