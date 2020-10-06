@@ -13,9 +13,8 @@
             <h2 class="container-title">Settings</h2>
             
             <label for="load-process">Carga Proceso</label>
-            <input type="number" name="load-process" id="load-process">
+            <input type="number" name="load-process" id="load-process" class="load-process">
             <span>MB</span>
-            <button type="button" class="load-btn">Cargar</button>
 
             <select name="ubication-type" id="ubication-type" class="ubication-type">
                 <option value="0">first-fit</option>
@@ -23,9 +22,13 @@
                 <option value="2">next-fit</option>
             </select>
 
-            <!-- <label for="memory-size">Cambiar tamaño memoria </label>
+            <button type="button" class="load-btn">Cargar</button>
+
+            <label for="memory-size">Cambiar tamaño memoria </label>
             <input type="number" name="memory-size" id="memory-size">
-            <button type="button" class="memory-size-btn">Establecer</button> -->
+            <button type="button" class="memory-size-btn">Establecer</button>
+
+            <button type="button" class="btn-reset">Reset</button>
 
         </div>
     
@@ -34,7 +37,7 @@
             
             <div class="container-memory-aux">
                 <div class="memory">
-                    <div class="partition inactive" id="partition-aux"></div>
+                    <div class="partition inactive" id="partition-aux"><h6></h6></div>
                 </div>
             </div>
         </div>        
