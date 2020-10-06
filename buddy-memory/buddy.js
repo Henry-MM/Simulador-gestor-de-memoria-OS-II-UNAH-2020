@@ -22,14 +22,14 @@ function makeRequest(){
 
     var amount = parseInt(load_number.value);
 
-    if(amount > 64)
+    if(amount > memorySize)
         alert("El proceso es mas grande que la memoria.");
     else if(amount <= 0)
         alert("El proceso debe ser mayor que 0.")
         else{
             request (root, amount);
             var size ="MB";
-            $( ".userOperations h2" ).append( "Request " + amount + size + " <br>");
+            $( ".userOperations h4" ).append( "Request " + amount + size + " <br>");
         }
 
         update_table_diagram();
@@ -38,7 +38,8 @@ function makeRequest(){
 
 function delete_partition(label){
     release(label); 
-    update_table_diagram();  
+    update_table_diagram(); 
+    $( ".userOperations h4" ).append( "Release " + label + " <br>"); 
 }
 
 

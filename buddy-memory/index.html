@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h2 class="container-title">Settings</h2>
+            <h2 class="container-title">Configuración</h2>
 
             <!-- <label >Tamaño de memoria</label>
             <select name="memorySize" id="memorySize">
@@ -24,10 +24,16 @@
                 <option value="1024">1024 MB</option>
             </select> -->
             
-            <label for="load-process">Carga Proceso</label>
+            <label for="load-process">Carga Proceso</label><br>
             <input type="number" name="load-process" id="load-process">
             <span>MB</span>
             <button type="button" class="load-btn">Cargar</button>
+
+            <div id="history">
+                <div class="userOperations"> 
+                    <h4>Historial de operaciones:<br></h4>
+                </div>
+            </div>
 
             <!-- <label for="memory-size">Cambiar tamaño memoria </label>
             <input type="number" name="memory-size" id="memory-size">
