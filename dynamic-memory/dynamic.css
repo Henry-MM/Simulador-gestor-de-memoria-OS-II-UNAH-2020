@@ -109,6 +109,12 @@ i:hover{
 
 label{
     display: block;
+    font-size: 1rem;
+    margin: 5% 0;
+}
+
+hr{
+    margin:10px 0;
 }
 
 .load-btn,
