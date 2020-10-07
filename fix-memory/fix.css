@@ -173,6 +173,12 @@ hr{
     color: #1d70a2;
     display: block;
     margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.links-setting:hover{
+    color: #0d5d56;
 }
 
 .title-memory{

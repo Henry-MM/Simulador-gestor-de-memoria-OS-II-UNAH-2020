@@ -152,6 +152,12 @@ svg {
     color: #1d70a2;
     display: block;
     margin: 10px 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.links-setting:hover{
+    color: #0d5d56;
 }
 
 .title-memory{
