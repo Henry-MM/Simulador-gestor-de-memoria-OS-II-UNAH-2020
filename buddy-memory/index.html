@@ -4,35 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory management simulator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="./buddy.css" type="text/css" />
     <script src="https://kit.fontawesome.com/ef3dcc44be.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <h2 class="container-title">Settings</h2>
+            <h2 class="container-title">Configuración</h2>
+
+            <!-- <label >Tamaño de memoria</label>
+            <select name="memorySize" id="memorySize">
+                <option value="32">32 MB</option>
+                <option value="64">64 MB</option>
+                <option value="128">128 MB</option>
+                <option value="256">256 MB</option>
+                <option value="512">512 MB</option>
+                <option value="1024">1024 MB</option>
+            </select> -->
             
-            <label for="load-process">Carga Proceso</label>
+            <label for="load-process">Carga Proceso</label><br>
             <input type="number" name="load-process" id="load-process">
             <span>MB</span>
             <button type="button" class="load-btn">Cargar</button>
+
+            <div id="history">
+                <div class="userOperations"> 
+                    <h4>Historial de operaciones:<br></h4>
+                </div>
+            </div>
 
             <!-- <label for="memory-size">Cambiar tamaño memoria </label>
             <input type="number" name="memory-size" id="memory-size">
             <button type="button" class="memory-size-btn">Establecer</button> -->
         </div>
     
-        <div class="container-memory">
-            <h2 class="container-title">Memory management</h2>
-            
-            <div class="container-memory-aux">
-                <div class="memory-buddy-container">
-                    <div class="memory-buddy"><h6>64 MB</h6></div>
-                </div>
-            </div>
-        </div>        
+        <div class="container-memory">   
+            <div class="memoryDiagram" id="memory_diagram" align="left">
+                <table id="table_diagram">
+                    <tr>
+                      <td>1024 MB</td>
+                    </tr>
+                </table>
+              </div>
+             <div class="" id="tree_diagram"></div>
     </div>
 
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="binary_tree.js"></script>
+    <script src="bootstrap.min.js"></script>
     <script src="./buddy.js"></script>
+
 </body>
 </html>
