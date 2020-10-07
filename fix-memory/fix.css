@@ -29,6 +29,7 @@
 
     border-radius: 14px;
     background-color: var(--sidebar-background);
+    position: relative;
 }
 
 .container .container-memory{
@@ -164,4 +165,18 @@ hr{
     width: 30%;
     margin-left: 5%;
     font-size: 1rem;
+}
+
+
+.links-setting{
+    text-decoration: none;
+    color: #1d70a2;
+    display: block;
+    margin: 10px 0;
+}
+
+.title-memory{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
 }

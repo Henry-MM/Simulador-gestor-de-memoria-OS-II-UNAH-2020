@@ -29,6 +29,7 @@
 
     border-radius: 14px;
     background-color: var(--sidebar-background);
+    position: relative;
 }
 
 .container .container-memory{
@@ -143,4 +144,24 @@ svg {
 .node circle{
     fill: #fff;
     stroke-width: 3px;
+}
+
+
+.links-setting{
+    text-decoration: none;
+    color: #1d70a2;
+    display: block;
+    margin: 10px 0;
+}
+
+.title-memory{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.buddy{
+    overflow: scroll;
 }
